@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radix Solar - Home</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: orange;
+      padding: 10px 20px;
+    }
+
+    .header .logo {
+      width: 200px; /* Adjust the width as needed */
+      height: auto;
+    }
+
+    .header .dropdown {
+      position: relative;
+    }
+
+    .header .dropbtn {
+      background-color: orange;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: orange;
+      min-width: 120px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f9f9f9;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    #main-content {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .featured-section {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
+      text-align: center;
+      background-color: white;
+      border: 2px solid orange;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .img-box {
+      margin-bottom: 10px;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .feature-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: black;
+    }
+
+    .feature-description {
+      font-size: 14px;
+      color: black;
+    }
+
+    /* Awards section styles */
+    .awards-section {
+      text-align: center;
+      margin-top: 50px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .awards-section h2 {
+      font-size: 24px;
+      color: white;
+    }
+
+    .awards-section .row {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .awards-section .col-sm-4 {
+      flex-basis: 33.33%;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .awards-section img {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: orange;
+      padding: 20px;
+      text-align: center;
+      position: static;
+      width: 100%;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .footer p {
+      margin-top: 10px; /* Increase or decrease the margin-top value as desired */
+      margin-bottom: 5px; /* Decrease the margin-bottom value to bring the text closer to the bottom */
+    }
+
+    .footer .awards-text {
+      font-size: 18px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .footer .bubbles {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .footer .bubble {
+      width: 120px;
+      height: 120px;
+      background-color: white;
+      border-radius: 50%;
+      margin: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer .bubble img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Scroll-to-top styles */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: orange;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 9999;
+    }
+
+    .scroll-to-top.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll-to-top a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="Images/banner.png" alt="Banner">
+    <div class="dropdown">
+      <button class="dropbtn">Menu &#9662;</button>
+      <div class="dropdown-content">
+        <a href="#">Login</a>
+        <a href="#">Contact us</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content">
+    <h1>Go Solar with Radix Solar</h1>
+    <h2>Your future is bright</h2>
+    <p>We focus on the needs of your specific location, adapting your technology, install, and permit process to your local conditions.</p>
+
+    <div class="featured-section">
+      <div class="img-box"><img src="Images/process.png" alt="The Solar Process"></div>
+      <h3 class="feature-title">The Solar Process</h3>
+      <p class="feature-description">Radix Solar is the industry leader in smart, affordable energy solutions for your home.</p>
+    </div>
+
+    <div class="featured-section">
+      <div class="img-box"><img src="Images/mark.png" alt="Why Radix Solar"></div>
+      <h3 class="feature-title">Why Radix Solar?</h3>
+      <p class="feature-description">From coast to coast, Radix Solar is the national leader in residential solar power.</p>
+    </div>
+
+    <div class="featured-section">
+      <div class="img-box"><img src="Images/price.png" alt="Ready For Pricing"></div>
+      <h3 class="feature-title">Ready For Pricing?</h3>
+      <p class="feature-description">Solar is more affordable than ever, with no out-of-pocket cost for most customers.</p>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="awards-text">Our Awards</p>
+      <div class="bubbles">
+        <div class="bubble">
+          <img src="Images/bbb.png" alt="Bubble">
+        </div>
+        <div class="bubble">
+          <img src="Images/50.png" alt="Bubble">
+        </div>
+        <div class="bubble">
+          <img src="Images/best.png" alt="Bubble">
+        </div>
+      </div>
+      <p>&copy; 2023 Radix Solar. All rights reserved.</p>
+    </div>
+
+    <!-- Scroll-to-top arrow -->
+    <div class="scroll-to-top" id="scrollToTop">
+      <a href="#main-content">&#8593;</a>
+    </div>
+  </div>
+
+  <script>
+  // Scroll-to-top functionality
+  window.addEventListener('scroll', function () {
+    var scrollToTop = document.getElementById('scrollToTop');
+    if (window.pageYOffset > 100) {
+      scrollToTop.classList.add('active');
+    } else {
+      scrollToTop.classList.remove('active');
+    }
+  });
+
+  // Smooth scroll to the header when scroll-to-top arrow is clicked
+  var scrollToTopLink = document.querySelector('.scroll-to-top a');
+  scrollToTopLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    var headerElement = document.querySelector('.header');
+    headerElement.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
+
+<!-- -- C:\Users\Work\Desktop\Radix\Images\banner.png -->
